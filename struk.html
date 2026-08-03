@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Struk Tiket — KAI Tiket</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR (hidden on print) ===================== -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <div class="navbar-logo">KAI</div>
+        <div class="navbar-title">KAI <span>Tiket</span></div>
+      </a>
+      <div class="navbar-links">
+        <a href="index.html">🏠 Beranda</a>
+        <a href="pesan.html">🎫 Pesan Tiket</a>
+        <a href="status.html">📋 Status Pemesanan</a>
+        <a href="struk.html" class="active">🧾 Struk Tiket</a>
+        <a href="login.html" class="btn-logout">⏻ Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== STRUK AREA ===================== -->
+  <div class="struk-wrapper">
+
+    <div style="margin-bottom:1.5rem;text-align:center;">
+      <div class="section-label" style="display:block;margin-bottom:0.4rem;">🧾 E-Tiket</div>
+      <h1 style="font-family:'Playfair Display',serif;font-size:1.75rem;font-weight:700;color:var(--navy);">
+        Struk &amp; <span style="color:var(--gold-dim);">Tiket Perjalanan</span>
+      </h1>
+      <p style="color:var(--text-mid);font-size:0.9rem;margin-top:0.4rem;">
+        Tunjukkan QR code atau nomor booking kepada petugas di stasiun.
+      </p>
+    </div>
+
+    <!-- Alert sukses -->
+    <div class="alert alert-success" style="margin-bottom:1.5rem;font-size:0.9rem;">
+      ✅ &nbsp;Pembayaran <strong>berhasil dikonfirmasi</strong>. Tiket Anda sudah aktif dan siap digunakan!
+    </div>
+
+    <!-- THE STRUK -->
+    <div class="struk">
+
+      <!-- Header -->
+      <div class="struk-header">
+        <div class="struk-logo">🚄 KAI Tiket</div>
+        <div class="struk-subtitle">PT Kereta Api Indonesia (Persero)</div>
+        <div style="margin-top:1rem;font-size:0.78rem;color:rgba(255,255,255,0.5);">
+          Tiket ini merupakan bukti sah pemesanan dan pembayaran yang absah secara hukum.
+        </div>
+      </div>
+
+      <!-- Status Bar -->
+      <div class="struk-status-bar">
+        ✅ &nbsp; TIKET AKTIF — PEMBAYARAN LUNAS
+      </div>
+
+      <!-- Body -->
+      <div class="struk-body">
+
+        <!-- Booking ID -->
+        <div class="struk-id">
+          <div class="struk-id-label">Kode Booking</div>
+          <div class="struk-id-value">KAI-2025-001234</div>
+        </div>
+
+        <!-- Route Visual -->
+        <div class="struk-route">
+          <div class="struk-city">
+            <div class="struk-city-code">JKT</div>
+            <div class="struk-city-name">Jakarta Gambir</div>
+            <div style="font-size:1.15rem;font-weight:700;color:var(--navy);margin-top:0.4rem;">08.00 WIB</div>
+          </div>
+          <div class="struk-route-arrow">
+            <div class="struk-route-line"></div>
+            <span style="font-size:1.5rem;">🚄</span>
+            <div class="struk-route-line"></div>
+            <div style="font-size:0.72rem;color:var(--text-lite);margin-top:2px;">9j 15m</div>
+          </div>
+          <div class="struk-city">
+            <div class="struk-city-code">SBY</div>
+            <div class="struk-city-name">Surabaya Gubeng</div>
+            <div style="font-size:1.15rem;font-weight:700;color:var(--navy);margin-top:0.4rem;">17.15 WIB</div>
+          </div>
+        </div>
+
+        <!-- Dashed Divider -->
+        <div class="struk-divider">
+          <div class="struk-divider-circle"></div>
+          <div style="flex:1;border-top:2px dashed var(--cream-dim);"></div>
+          <div class="struk-divider-circle"></div>
+        </div>
+
+        <!-- Details Grid -->
+        <div class="struk-details">
+          <div class="struk-detail-item">
+            <div class="struk-detail-label">Nama Kereta</div>
+            <div class="struk-detail-value">Argo Bromo Anggrek</div>
+          </div>
+          <div class="struk-detail-item">
+            <div class="struk-detail-label">Tanggal Keberangkatan</div>
+            <div class="struk-detail-value">Sabtu, 14 Desember 2025</div>
+          </div>
+          <div class="struk-detail-item">
+            <div class="struk-detail-label">Kelas</div>
+            <div class="struk-detail-value">Eksekutif</div>
+          </div>
+          <div class="struk-detail-item">
+            <div class="struk-detail-label">Nomor Gerbong</div>
+            <div class="struk-detail-value">Gerbong 1</div>
+          </div>
+          <div class="struk-detail-item">
+            <div class="struk-detail-label">Nomor Kursi</div>
+            <div class="struk-detail-value" style="color:var(--gold-dim);font-size:1.1rem;">2A</div>
+          </div>
+          <div class="struk-detail-item">
+            <div class="struk-detail-label">Jumlah Penumpang</div>
+            <div class="struk-detail-value">1 Orang Dewasa</div>
+          </div>
+          <div class="struk-detail-item">
+            <div class="struk-detail-label">Nama Penumpang</div>
+            <div class="struk-detail-value">BUDI SANTOSO</div>
+          </div>
+          <div class="struk-detail-item">
+            <div class="struk-detail-label">NIK / KTP</div>
+            <div class="struk-detail-value">3201 **** **** 0001</div>
+          </div>
+          <div class="struk-detail-item">
+            <div class="struk-detail-label">No. Telepon</div>
+            <div class="struk-detail-value">0812-3456-7890</div>
+          </div>
+          <div class="struk-detail-item">
+            <div class="struk-detail-label">Metode Bayar</div>
+            <div class="struk-detail-value">BCA Virtual Account</div>
+          </div>
+          <div class="struk-detail-item">
+            <div class="struk-detail-label">Tanggal Pemesanan</div>
+            <div class="struk-detail-value">10 Des 2025 · 14.22 WIB</div>
+          </div>
+          <div class="struk-detail-item">
+            <div class="struk-detail-label">Tanggal Pembayaran</div>
+            <div class="struk-detail-value">10 Des 2025 · 14.55 WIB</div>
+          </div>
+        </div>
+
+        <!-- Dashed Divider 2 -->
+        <div class="struk-divider">
+          <div class="struk-divider-circle"></div>
+          <div style="flex:1;border-top:2px dashed var(--cream-dim);"></div>
+          <div class="struk-divider-circle"></div>
+        </div>
+
+        <!-- Rincian Harga -->
+        <div style="margin-bottom:1.25rem;">
+          <div style="font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-mid);margin-bottom:0.75rem;">Rincian Harga</div>
+          <div style="display:flex;justify-content:space-between;font-size:0.875rem;padding:0.4rem 0;border-bottom:1px solid var(--cream-dim);">
+            <span style="color:var(--text-mid);">Harga Tiket Eksekutif × 1</span>
+            <span style="font-weight:600;">Rp 450.000</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:0.875rem;padding:0.4rem 0;border-bottom:1px solid var(--cream-dim);">
+            <span style="color:var(--text-mid);">Biaya Administrasi</span>
+            <span style="font-weight:600;">Rp 7.500</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:0.875rem;padding:0.4rem 0;">
+            <span style="color:var(--text-mid);">Diskon Promo</span>
+            <span style="font-weight:600;color:var(--green);">Rp 0</span>
+          </div>
+        </div>
+
+        <!-- Total Harga -->
+        <div class="struk-price-section">
+          <div>
+            <label>Total Pembayaran</label>
+            <div style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin-top:2px;">Sudah termasuk pajak</div>
+          </div>
+          <div class="struk-price-total">Rp 457.500</div>
+        </div>
+
+        <!-- QR Code Placeholder -->
+        <div style="text-align:center;padding:1.5rem;background:var(--cream);border-radius:var(--radius);margin-bottom:1rem;">
+          <div style="width:120px;height:120px;margin:0 auto;background:var(--white);border:3px solid var(--navy);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:0.75rem;">
+            <div style="font-size:3rem;">📱</div>
+          </div>
+          <div style="font-size:0.8rem;color:var(--text-mid);">Scan QR Code di atas saat boarding</div>
+          <div style="font-size:0.75rem;color:var(--text-lite);margin-top:0.25rem;">atau tunjukkan kode booking: <strong>KAI-2025-001234</strong></div>
+        </div>
+
+      </div>
+
+      <!-- Footer Struk -->
+      <div class="struk-footer">
+        <div class="struk-barcode">| | | | | | | | | | | | | | | | | | | | | | | | | | | | | |</div>
+        <div style="font-size:0.7rem;color:var(--text-lite);letter-spacing:0.15em;margin-bottom:0.75rem;">
+          KAI2025001234JKTSBY20251214EKS001-2A
+        </div>
+        <div class="struk-thankyou">
+          🙏 Terima kasih telah menggunakan layanan <strong>KAI Tiket</strong>.<br>
+          Selamat menikmati perjalanan Anda! Harap hadir di stasiun <strong>30 menit</strong> sebelum keberangkatan.
+        </div>
+        <div style="margin-top:1rem;font-size:0.75rem;color:var(--text-lite);">
+          Hubungi kami: 121 (Telp KAI) · cs@kai.id · kai.id
+        </div>
+      </div>
+
+    </div>
+    <!-- / .struk -->
+
+    <!-- Print Actions -->
+    <div class="print-actions">
+      <button onclick="window.print()" class="btn btn-primary btn-lg">
+        🖨️ &nbsp;Cetak / Simpan PDF
+      </button>
+      <a href="status.html" class="btn btn-secondary btn-lg">
+        📋 Status Pemesanan
+      </a>
+      <a href="index.html" class="btn btn-outline btn-lg">
+        🏠 Kembali ke Beranda
+      </a>
+    </div>
+
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <p>© 2025 <strong>KAI Tiket</strong> — Platform Pemesanan Tiket Kereta Api Indonesia 🚂</p>
+  </footer>
+
+</body>
+</html>

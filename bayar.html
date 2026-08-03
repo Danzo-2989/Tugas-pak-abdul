@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pembayaran — KAI Tiket</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <div class="navbar-logo">KAI</div>
+        <div class="navbar-title">KAI <span>Tiket</span></div>
+      </a>
+      <div class="navbar-links">
+        <a href="index.html">🏠 Beranda</a>
+        <a href="pesan.html">🎫 Pesan Tiket</a>
+        <a href="status.html">📋 Status Pemesanan</a>
+        <a href="struk.html">🧾 Struk Tiket</a>
+        <a href="login.html" class="btn-logout">⏻ Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== PAYMENT AREA ===================== -->
+  <div class="booking-wrapper">
+
+    <div class="booking-header">
+      <div class="section-label">💳 Proses Pembayaran</div>
+      <h1 class="section-title">Pilih Metode <span>Pembayaran</span></h1>
+    </div>
+
+    <!-- Steps Progress -->
+    <div class="booking-steps">
+      <div class="step done">
+        <div class="step-num">✓</div>
+        <span>Pilih Kursi &amp; Gerbong</span>
+      </div>
+      <div class="step done">
+        <div class="step-num">✓</div>
+        <span>Data Penumpang</span>
+      </div>
+      <div class="step active">
+        <div class="step-num">3</div>
+        <span>Pembayaran</span>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <span>Selesai</span>
+      </div>
+    </div>
+
+    <!-- Batas Waktu Pembayaran -->
+    <div class="alert alert-info" style="margin-bottom:1.5rem;font-size:0.9rem;">
+      ⏰ &nbsp;<strong>Selesaikan pembayaran dalam:</strong> &nbsp;
+      <span style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--red);font-weight:700;">00:29:47</span>
+      &nbsp; sebelum pesanan otomatis dibatalkan.
+    </div>
+
+    <div class="booking-grid">
+
+      <!-- MAIN: Payment Form -->
+      <div class="booking-main">
+
+        <!-- Metode Pembayaran -->
+        <div class="card">
+          <div class="card-title">Pilih Metode Pembayaran</div>
+
+          <div class="payment-methods">
+
+            <label class="payment-option selected">
+              <input type="radio" name="bayar" value="bca" checked />
+              <span class="payment-option-icon">🏦</span>
+              <div class="payment-option-info">
+                <div class="payment-option-name">Transfer Bank BCA</div>
+                <div class="payment-option-desc">Virtual Account BCA</div>
+              </div>
+            </label>
+
+            <label class="payment-option">
+              <input type="radio" name="bayar" value="mandiri" />
+              <span class="payment-option-icon">🏦</span>
+              <div class="payment-option-info">
+                <div class="payment-option-name">Transfer Bank Mandiri</div>
+                <div class="payment-option-desc">Virtual Account Mandiri</div>
+              </div>
+            </label>
+
+            <label class="payment-option">
+              <input type="radio" name="bayar" value="bni" />
+              <span class="payment-option-icon">🏦</span>
+              <div class="payment-option-info">
+                <div class="payment-option-name">Transfer Bank BNI</div>
+                <div class="payment-option-desc">Virtual Account BNI</div>
+              </div>
+            </label>
+
+            <label class="payment-option">
+              <input type="radio" name="bayar" value="bri" />
+              <span class="payment-option-icon">🏦</span>
+              <div class="payment-option-info">
+                <div class="payment-option-name">Transfer Bank BRI</div>
+                <div class="payment-option-desc">Virtual Account BRI</div>
+              </div>
+            </label>
+
+            <label class="payment-option">
+              <input type="radio" name="bayar" value="gopay" />
+              <span class="payment-option-icon">💚</span>
+              <div class="payment-option-info">
+                <div class="payment-option-name">GoPay</div>
+                <div class="payment-option-desc">Dompet Digital GoPay</div>
+              </div>
+            </label>
+
+            <label class="payment-option">
+              <input type="radio" name="bayar" value="ovo" />
+              <span class="payment-option-icon">💜</span>
+              <div class="payment-option-info">
+                <div class="payment-option-name">OVO</div>
+                <div class="payment-option-desc">Dompet Digital OVO</div>
+              </div>
+            </label>
+
+            <label class="payment-option">
+              <input type="radio" name="bayar" value="dana" />
+              <span class="payment-option-icon">💙</span>
+              <div class="payment-option-info">
+                <div class="payment-option-name">DANA</div>
+                <div class="payment-option-desc">Dompet Digital DANA</div>
+              </div>
+            </label>
+
+            <label class="payment-option">
+              <input type="radio" name="bayar" value="qris" />
+              <span class="payment-option-icon">📱</span>
+              <div class="payment-option-info">
+                <div class="payment-option-name">QRIS</div>
+                <div class="payment-option-desc">Scan QR Code</div>
+              </div>
+            </label>
+
+          </div>
+        </div>
+
+        <!-- Detail Virtual Account (BCA) -->
+        <div class="card">
+          <div class="card-title">Instruksi Pembayaran — BCA Virtual Account</div>
+
+          <div style="background:var(--cream);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.5rem;text-align:center;">
+            <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-lite);margin-bottom:0.4rem;">
+              Nomor Virtual Account BCA
+            </div>
+            <div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:800;color:var(--navy);letter-spacing:0.1em;">
+              1225 &nbsp;0000 &nbsp;4575 &nbsp;001
+            </div>
+            <div style="font-size:0.8rem;color:var(--text-mid);margin-top:0.5rem;">
+              Salin dan bayarkan ke nomor di atas
+            </div>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:0.75rem;font-size:0.875rem;">
+            <div style="display:flex;gap:12px;align-items:flex-start;">
+              <span style="background:var(--navy);color:var(--gold);width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:700;flex-shrink:0;">1</span>
+              <span style="color:var(--text-mid);">Buka aplikasi BCA Mobile / ATM BCA Anda.</span>
+            </div>
+            <div style="display:flex;gap:12px;align-items:flex-start;">
+              <span style="background:var(--navy);color:var(--gold);width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:700;flex-shrink:0;">2</span>
+              <span style="color:var(--text-mid);">Pilih menu <strong>Transfer → Virtual Account</strong>.</span>
+            </div>
+            <div style="display:flex;gap:12px;align-items:flex-start;">
+              <span style="background:var(--navy);color:var(--gold);width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:700;flex-shrink:0;">3</span>
+              <span style="color:var(--text-mid);">Masukkan nomor VA: <strong>1225 0000 4575 001</strong></span>
+            </div>
+            <div style="display:flex;gap:12px;align-items:flex-start;">
+              <span style="background:var(--navy);color:var(--gold);width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:700;flex-shrink:0;">4</span>
+              <span style="color:var(--text-mid);">Konfirmasi jumlah <strong>Rp 457.500</strong> dan selesaikan transaksi.</span>
+            </div>
+            <div style="display:flex;gap:12px;align-items:flex-start;">
+              <span style="background:var(--green);color:white;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:700;flex-shrink:0;">✓</span>
+              <span style="color:var(--text-mid);">Tiket otomatis aktif setelah pembayaran terverifikasi.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kode Promo -->
+        <div class="card">
+          <div class="card-title">Kode Promo</div>
+          <div style="display:flex;gap:0.75rem;">
+            <input type="text" placeholder="Masukkan kode promo..." style="flex:1;padding:0.75rem 1rem;border:2px solid var(--cream-dim);border-radius:var(--radius);font-family:'DM Sans',sans-serif;font-size:0.9rem;outline:none;" />
+            <button class="btn btn-outline">Pakai</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SIDEBAR: Order Summary -->
+      <div class="booking-sidebar">
+        <div class="order-summary">
+          <div class="order-summary-header">
+            <h4>🧾 Ringkasan Pesanan</h4>
+          </div>
+          <div class="order-summary-body">
+            <div class="order-item">
+              <span class="order-item-label">Kereta</span>
+              <span class="order-item-value">Argo Bromo Anggrek</span>
+            </div>
+            <div class="order-item">
+              <span class="order-item-label">Rute</span>
+              <span class="order-item-value">JKT → SBY</span>
+            </div>
+            <div class="order-item">
+              <span class="order-item-label">Tanggal</span>
+              <span class="order-item-value">14 Des 2025</span>
+            </div>
+            <div class="order-item">
+              <span class="order-item-label">Gerbong / Kursi</span>
+              <span class="order-item-value">1 / 2A</span>
+            </div>
+            <div class="order-item">
+              <span class="order-item-label">Kelas</span>
+              <span class="order-item-value">Eksekutif</span>
+            </div>
+            <div class="order-item">
+              <span class="order-item-label">Penumpang</span>
+              <span class="order-item-value">1 orang</span>
+            </div>
+            <div class="order-item">
+              <span class="order-item-label">Harga Tiket</span>
+              <span class="order-item-value">Rp 450.000</span>
+            </div>
+            <div class="order-item">
+              <span class="order-item-label">Biaya Admin</span>
+              <span class="order-item-value">Rp 7.500</span>
+            </div>
+            <div class="order-item">
+              <span class="order-item-label">Diskon Promo</span>
+              <span class="order-item-value" style="color:var(--green);">- Rp 0</span>
+            </div>
+            <div class="order-total">
+              <span class="order-total-label">Total Bayar</span>
+              <span class="order-total-value">Rp 457.500</span>
+            </div>
+          </div>
+          <div class="order-summary-footer">
+            <a href="status.html" class="btn btn-success btn-full btn-lg">
+              ✅ Konfirmasi Pembayaran
+            </a>
+            <div style="text-align:center;margin-top:0.75rem;font-size:0.78rem;color:var(--text-lite);">
+              🔒 Dijamin aman &amp; terenkripsi SSL
+            </div>
+          </div>
+        </div>
+
+        <!-- Kebijakan -->
+        <div class="card" style="margin-top:1rem;">
+          <div style="font-size:0.8rem;color:var(--text-mid);line-height:1.7;">
+            <div style="font-weight:600;color:var(--navy);margin-bottom:0.5rem;">📌 Ketentuan Pembatalan</div>
+            <div>• H-7: Refund 75%</div>
+            <div>• H-3: Refund 50%</div>
+            <div>• H-1: Tidak dapat direfund</div>
+            <div style="margin-top:0.75rem;font-size:0.75rem;">
+              Tiket dapat diubah jadwal max H-3 dengan biaya administrasi.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <p>© 2025 <strong>KAI Tiket</strong> — Platform Pemesanan Tiket Kereta Api Indonesia 🚂</p>
+  </footer>
+
+</body>
+</html>

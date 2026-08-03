@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pesan Tiket — KAI Tiket</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <div class="navbar-logo">KAI</div>
+        <div class="navbar-title">KAI <span>Tiket</span></div>
+      </a>
+      <div class="navbar-links">
+        <a href="index.html">🏠 Beranda</a>
+        <a href="pesan.html" class="active">🎫 Pesan Tiket</a>
+        <a href="status.html">📋 Status Pemesanan</a>
+        <a href="struk.html">🧾 Struk Tiket</a>
+        <a href="login.html" class="btn-logout">⏻ Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== BOOKING AREA ===================== -->
+  <div class="booking-wrapper">
+
+    <div class="booking-header">
+      <div class="section-label">🎫 Proses Pemesanan</div>
+      <h1 class="section-title">Pilih Gerbong &amp; <span>Kursi</span></h1>
+    </div>
+
+    <!-- Steps Progress -->
+    <div class="booking-steps">
+      <div class="step active">
+        <div class="step-num">1</div>
+        <span>Pilih Kursi &amp; Gerbong</span>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <span>Data Penumpang</span>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <span>Pembayaran</span>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <span>Selesai</span>
+      </div>
+    </div>
+
+    <!-- Train Info Banner -->
+    <div class="train-info-banner">
+      <div>
+        <div class="train-info-name">🚄 Argo Bromo Anggrek</div>
+        <div class="train-info-route">Jakarta Gambir → Surabaya Gubeng &nbsp;|&nbsp; Sabtu, 14 Desember 2025</div>
+      </div>
+      <div class="train-info-stats">
+        <div class="train-stat">
+          <div class="train-stat-label">Berangkat</div>
+          <div class="train-stat-value">08.00</div>
+        </div>
+        <div class="train-stat">
+          <div class="train-stat-label">Tiba</div>
+          <div class="train-stat-value">17.15</div>
+        </div>
+        <div class="train-stat">
+          <div class="train-stat-label">Durasi</div>
+          <div class="train-stat-value">9j 15m</div>
+        </div>
+        <div class="train-stat">
+          <div class="train-stat-label">Kelas</div>
+          <div class="train-stat-value">Eksekutif</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Two-Column Layout -->
+    <div class="booking-grid">
+
+      <!-- MAIN CONTENT -->
+      <div class="booking-main">
+
+        <!-- Pilih Gerbong -->
+        <div class="card">
+          <div class="card-title">Pilih Gerbong</div>
+
+          <div class="gerbong-tabs">
+            <div class="gerbong-tab selected">Gerbong 1<br><small style="font-weight:400;color:inherit;opacity:0.7">12 tersedia</small></div>
+            <div class="gerbong-tab">Gerbong 2<br><small style="font-weight:400;color:inherit;opacity:0.7">8 tersedia</small></div>
+            <div class="gerbong-tab">Gerbong 3<br><small style="font-weight:400;color:inherit;opacity:0.7">20 tersedia</small></div>
+            <div class="gerbong-tab">Gerbong 4<br><small style="font-weight:400;color:inherit;opacity:0.7">3 tersedia</small></div>
+            <div class="gerbong-tab">Gerbong 5<br><small style="font-weight:400;color:inherit;opacity:0.7">15 tersedia</small></div>
+          </div>
+
+          <!-- Seat Legend -->
+          <div class="seat-legend">
+            <div class="legend-item">
+              <div class="legend-dot available"></div> Tersedia
+            </div>
+            <div class="legend-item">
+              <div class="legend-dot selected-dot"></div> Dipilih
+            </div>
+            <div class="legend-item">
+              <div class="legend-dot booked"></div> Terisi
+            </div>
+          </div>
+
+          <!-- Label A-B - aisle - C-D -->
+          <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:0.5rem;max-width:340px;margin-bottom:0.5rem;">
+            <div style="text-align:center;font-size:0.7rem;font-weight:700;color:var(--text-lite);">A</div>
+            <div style="text-align:center;font-size:0.7rem;font-weight:700;color:var(--text-lite);">B</div>
+            <div></div>
+            <div style="text-align:center;font-size:0.7rem;font-weight:700;color:var(--text-lite);">C</div>
+            <div style="text-align:center;font-size:0.7rem;font-weight:700;color:var(--text-lite);">D</div>
+          </div>
+
+          <!-- Seat Map -->
+          <div class="seat-map">
+            <!-- Row 1 -->
+            <div class="seat booked">1A</div>
+            <div class="seat booked">1B</div>
+            <div class="seat seat-aisle"></div>
+            <div class="seat">1C</div>
+            <div class="seat booked">1D</div>
+
+            <!-- Row 2 -->
+            <div class="seat selected">2A</div>
+            <div class="seat">2B</div>
+            <div class="seat seat-aisle"></div>
+            <div class="seat">2C</div>
+            <div class="seat booked">2D</div>
+
+            <!-- Row 3 -->
+            <div class="seat">3A</div>
+            <div class="seat booked">3B</div>
+            <div class="seat seat-aisle"></div>
+            <div class="seat booked">3C</div>
+            <div class="seat">3D</div>
+
+            <!-- Row 4 -->
+            <div class="seat booked">4A</div>
+            <div class="seat">4B</div>
+            <div class="seat seat-aisle"></div>
+            <div class="seat">4C</div>
+            <div class="seat">4D</div>
+
+            <!-- Row 5 -->
+            <div class="seat">5A</div>
+            <div class="seat">5B</div>
+            <div class="seat seat-aisle"></div>
+            <div class="seat booked">5C</div>
+            <div class="seat booked">5D</div>
+
+            <!-- Row 6 -->
+            <div class="seat booked">6A</div>
+            <div class="seat booked">6B</div>
+            <div class="seat seat-aisle"></div>
+            <div class="seat">6C</div>
+            <div class="seat">6D</div>
+
+            <!-- Row 7 -->
+            <div class="seat">7A</div>
+            <div class="seat">7B</div>
+            <div class="seat seat-aisle"></div>
+            <div class="seat">7C</div>
+            <div class="seat booked">7D</div>
+
+            <!-- Row 8 -->
+            <div class="seat">8A</div>
+            <div class="seat booked">8B</div>
+            <div class="seat seat-aisle"></div>
+            <div class="seat booked">8C</div>
+            <div class="seat">8D</div>
+          </div>
+
+          <div class="alert alert-info" style="margin-top:1.25rem;">
+            💡 Klik kursi untuk memilih/membatalkan pilihan. Kursi abu-abu sudah terisi.
+          </div>
+        </div>
+
+        <!-- Data Penumpang -->
+        <div class="card">
+          <div class="card-title">Data Penumpang</div>
+
+          <div class="passenger-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nama Depan</label>
+                <input type="text" value="Budi" />
+              </div>
+              <div class="form-group">
+                <label>Nama Belakang</label>
+                <input type="text" value="Santoso" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>NIK / Paspor</label>
+                <input type="text" value="3201234567890001" />
+              </div>
+              <div class="form-group">
+                <label>Jenis Identitas</label>
+                <select>
+                  <option selected>KTP</option>
+                  <option>Paspor</option>
+                  <option>SIM</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nomor HP</label>
+                <input type="tel" value="081234567890" />
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" value="budi@email.com" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Jumlah Penumpang</label>
+              <select>
+                <option>1 Penumpang</option>
+                <option>2 Penumpang</option>
+                <option>3 Penumpang</option>
+                <option>4 Penumpang</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SIDEBAR: Order Summary -->
+      <div class="booking-sidebar">
+        <div class="order-summary">
+          <div class="order-summary-header">
+            <h4>🧾 Ringkasan Pesanan</h4>
+          </div>
+          <div class="order-summary-body">
+            <div class="order-item">
+              <span class="order-item-label">Kereta</span>
+              <span class="order-item-value">Argo Bromo Anggrek</span>
+            </div>
+            <div class="order-item">
+              <span class="order-item-label">Rute</span>
+              <span class="order-item-value">JKT → SBY</span>
+            </div>
+            <div class="order-item">
+              <span class="order-item-label">Tanggal</span>
+              <span class="order-item-value">14 Des 2025</span>
+            </div>
+            <div class="order-item">
+              <span class="order-item-label">Gerbong</span>
+              <span class="order-item-value">Gerbong 1</span>
+            </div>
+            <div class="order-item">
+              <span class="order-item-label">Kursi Dipilih</span>
+              <span class="order-item-value text-gold">2A</span>
+            </div>
+            <div class="order-item">
+              <span class="order-item-label">Kelas</span>
+              <span class="order-item-value">Eksekutif</span>
+            </div>
+            <div class="order-item">
+              <span class="order-item-label">Penumpang</span>
+              <span class="order-item-value">1 orang</span>
+            </div>
+            <div class="order-item">
+              <span class="order-item-label">Harga Tiket</span>
+              <span class="order-item-value">Rp 450.000</span>
+            </div>
+            <div class="order-item">
+              <span class="order-item-label">Biaya Admin</span>
+              <span class="order-item-value">Rp 7.500</span>
+            </div>
+            <div class="order-total">
+              <span class="order-total-label">Total Bayar</span>
+              <span class="order-total-value">Rp 457.500</span>
+            </div>
+          </div>
+          <div class="order-summary-footer">
+            <a href="bayar.html" class="btn btn-primary btn-full btn-lg">
+              Lanjut ke Pembayaran →
+            </a>
+            <div class="text-center mt-2" style="font-size:0.78rem;color:var(--text-lite);">
+              🔒 Transaksi aman &amp; terenkripsi
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <p>© 2025 <strong>KAI Tiket</strong> — Platform Pemesanan Tiket Kereta Api Indonesia 🚂</p>
+  </footer>
+
+</body>
+</html>

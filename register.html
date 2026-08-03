@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daftar — KAI Tiket</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="auth-wrapper">
+
+    <!-- LEFT PANEL -->
+    <div class="auth-left">
+      <div class="auth-left-content">
+
+        <div class="auth-brand">
+          <div class="auth-logo">KAI</div>
+          <div class="auth-brand-name">KAI <span>Tiket</span></div>
+        </div>
+
+        <h2>Bergabung &<br>nikmati <em>perjalanan</em></h2>
+        <p>Daftar gratis dan dapatkan akses ke semua rute kereta serta promo eksklusif member baru.</p>
+
+        <div class="auth-features">
+          <div class="auth-feature">
+            <div class="auth-feature-icon">🎁</div>
+            <span>Diskon 15% untuk pembelian pertama</span>
+          </div>
+          <div class="auth-feature">
+            <div class="auth-feature-icon">⭐</div>
+            <span>Kumpulkan poin setiap perjalanan</span>
+          </div>
+          <div class="auth-feature">
+            <div class="auth-feature-icon">📱</div>
+            <span>Notifikasi jadwal & status real-time</span>
+          </div>
+          <div class="auth-feature">
+            <div class="auth-feature-icon">🛡️</div>
+            <span>Data pribadi terlindungi & aman</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RIGHT PANEL (Form) -->
+    <div class="auth-right" style="width:520px;">
+      <div class="auth-card" style="max-width:460px;">
+
+        <h3>Buat Akun Baru</h3>
+        <p>Isi data diri Anda untuk membuat akun KAI Tiket.</p>
+
+        <form action="index.html" method="get">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="namaDepan">Nama Depan</label>
+              <input type="text" id="namaDepan" placeholder="Budi" required />
+            </div>
+            <div class="form-group">
+              <label for="namaBelakang">Nama Belakang</label>
+              <input type="text" id="namaBelakang" placeholder="Santoso" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Aktif</label>
+            <input type="email" id="email" placeholder="contoh@email.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="noHp">Nomor HP</label>
+            <input type="tel" id="noHp" placeholder="08xxxxxxxxxx" required />
+          </div>
+
+          <div class="form-group">
+            <label for="nik">NIK (Nomor KTP)</label>
+            <input type="text" id="nik" placeholder="16 digit nomor KTP" maxlength="16" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="tglLahir">Tanggal Lahir</label>
+              <input type="date" id="tglLahir" required />
+            </div>
+            <div class="form-group">
+              <label for="jenisKelamin">Jenis Kelamin</label>
+              <select id="jenisKelamin" required>
+                <option value="">Pilih...</option>
+                <option>Laki-laki</option>
+                <option>Perempuan</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Kata Sandi</label>
+            <input type="password" id="password" placeholder="Min. 8 karakter" required />
+          </div>
+
+          <div class="form-group">
+            <label for="konfirmPassword">Konfirmasi Kata Sandi</label>
+            <input type="password" id="konfirmPassword" placeholder="Ulangi kata sandi" required />
+          </div>
+
+          <div class="flex items-center gap-2 mb-3" style="font-size:0.85rem;color:var(--text-mid);margin-bottom:1.5rem;">
+            <input type="checkbox" id="setuju" style="accent-color:var(--gold-dim);width:16px;height:16px;" required />
+            <label for="setuju">
+              Saya menyetujui <a href="#" style="color:var(--gold-dim);font-weight:600;">Syarat & Ketentuan</a> serta
+              <a href="#" style="color:var(--gold-dim);font-weight:600;">Kebijakan Privasi</a>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full btn-lg">
+            ✅ &nbsp;Daftar Sekarang
+          </button>
+
+        </form>
+
+        <div class="auth-link">
+          Sudah punya akun? <a href="login.html">Masuk di sini →</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

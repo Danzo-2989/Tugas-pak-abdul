@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Status Pemesanan — KAI Tiket</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <div class="navbar-logo">KAI</div>
+        <div class="navbar-title">KAI <span>Tiket</span></div>
+      </a>
+      <div class="navbar-links">
+        <a href="index.html">🏠 Beranda</a>
+        <a href="pesan.html">🎫 Pesan Tiket</a>
+        <a href="status.html" class="active">📋 Status Pemesanan</a>
+        <a href="struk.html">🧾 Struk Tiket</a>
+        <a href="login.html" class="btn-logout">⏻ Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== STATUS AREA ===================== -->
+  <div class="booking-wrapper">
+
+    <div class="booking-header">
+      <div class="section-label">📋 Riwayat Transaksi</div>
+      <h1 class="section-title">Status <span>Pemesanan</span></h1>
+    </div>
+
+    <!-- Filter & Search -->
+    <div class="card" style="margin-bottom:2rem;">
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:end;">
+        <div class="search-field" style="flex:1;min-width:200px;">
+          <label>Cari Kode Booking</label>
+          <input type="text" placeholder="Contoh: KAI-2025-001234" />
+        </div>
+        <div class="search-field" style="flex:1;min-width:180px;">
+          <label>Filter Status</label>
+          <select>
+            <option>Semua Status</option>
+            <option>Lunas / Aktif</option>
+            <option>Menunggu Pembayaran</option>
+            <option>Dibatalkan</option>
+          </select>
+        </div>
+        <div class="search-field" style="flex:1;min-width:180px;">
+          <label>Filter Periode</label>
+          <select>
+            <option>Semua Periode</option>
+            <option>Bulan Ini</option>
+            <option>3 Bulan Terakhir</option>
+            <option>6 Bulan Terakhir</option>
+          </select>
+        </div>
+        <button class="btn btn-secondary" style="height:48px;">🔍 Cari</button>
+      </div>
+    </div>
+
+    <!-- ===== TRANSAKSI 1: LUNAS ===== -->
+    <div class="status-card">
+      <div class="status-card-header">
+        <div>
+          <div style="font-size:0.75rem;color:var(--text-lite);margin-bottom:0.2rem;text-transform:uppercase;letter-spacing:0.08em;">Kode Booking</div>
+          <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--navy);">KAI-2025-001234</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:0.75rem;">
+          <span class="status-badge paid">✓ Lunas</span>
+          <a href="struk.html" class="btn btn-outline" style="padding:0.4rem 1rem;font-size:0.82rem;">🧾 Cetak Tiket</a>
+        </div>
+      </div>
+      <div class="status-card-body">
+        <div class="status-route">
+          <span class="status-city">Jakarta Gambir</span>
+          <span class="status-arrow">→</span>
+          <span class="status-city">Surabaya Gubeng</span>
+        </div>
+        <div class="status-grid">
+          <div class="status-info-item">
+            <div class="status-info-label">Kereta</div>
+            <div class="status-info-value">Argo Bromo Anggrek</div>
+          </div>
+          <div class="status-info-item">
+            <div class="status-info-label">Tanggal</div>
+            <div class="status-info-value">Sab, 14 Des 2025</div>
+          </div>
+          <div class="status-info-item">
+            <div class="status-info-label">Gerbong / Kursi</div>
+            <div class="status-info-value">Gerbong 1 — 2A</div>
+          </div>
+          <div class="status-info-item">
+            <div class="status-info-label">Kelas</div>
+            <div class="status-info-value">Eksekutif</div>
+          </div>
+          <div class="status-info-item">
+            <div class="status-info-label">Penumpang</div>
+            <div class="status-info-value">Budi Santoso</div>
+          </div>
+          <div class="status-info-item">
+            <div class="status-info-label">Berangkat</div>
+            <div class="status-info-value">08.00 WIB</div>
+          </div>
+          <div class="status-info-item">
+            <div class="status-info-label">Tiba</div>
+            <div class="status-info-value">17.15 WIB</div>
+          </div>
+          <div class="status-info-item">
+            <div class="status-info-label">Total Bayar</div>
+            <div class="status-info-value text-gold font-bold">Rp 457.500</div>
+          </div>
+        </div>
+
+        <!-- Timeline -->
+        <div style="margin-top:0.5rem;">
+          <div style="font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-mid);margin-bottom:0.75rem;">Riwayat Status</div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-icon done">✓</div>
+              <div class="timeline-content">
+                <div class="timeline-title">Pesanan Dibuat</div>
+                <div class="timeline-desc">Pesanan berhasil dibuat dan menunggu konfirmasi pembayaran.</div>
+                <div class="timeline-time">10 Des 2025 · 14.22 WIB</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon done">✓</div>
+              <div class="timeline-content">
+                <div class="timeline-title">Pembayaran Diterima</div>
+                <div class="timeline-desc">Pembayaran via BCA Virtual Account berhasil dikonfirmasi.</div>
+                <div class="timeline-time">10 Des 2025 · 14.55 WIB</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon done">✓</div>
+              <div class="timeline-content">
+                <div class="timeline-title">Tiket Aktif</div>
+                <div class="timeline-desc">Tiket telah aktif. Siap untuk keberangkatan tanggal 14 Des 2025.</div>
+                <div class="timeline-time">10 Des 2025 · 14.56 WIB</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== TRANSAKSI 2: MENUNGGU ===== -->
+    <div class="status-card">
+      <div class="status-card-header">
+        <div>
+          <div style="font-size:0.75rem;color:var(--text-lite);margin-bottom:0.2rem;text-transform:uppercase;letter-spacing:0.08em;">Kode Booking</div>
+          <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--navy);">KAI-2025-001289</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:0.75rem;">
+          <span class="status-badge pending">⏳ Menunggu Bayar</span>
+          <a href="bayar.html" class="btn btn-primary" style="padding:0.4rem 1rem;font-size:0.82rem;">💳 Bayar Sekarang</a>
+        </div>
+      </div>
+      <div class="status-card-body">
+        <div class="status-route">
+          <span class="status-city">Yogyakarta</span>
+          <span class="status-arrow">→</span>
+          <span class="status-city">Solo</span>
+        </div>
+        <div class="status-grid">
+          <div class="status-info-item">
+            <div class="status-info-label">Kereta</div>
+            <div class="status-info-value">Prambanan Ekspres</div>
+          </div>
+          <div class="status-info-item">
+            <div class="status-info-label">Tanggal</div>
+            <div class="status-info-value">Min, 20 Des 2025</div>
+          </div>
+          <div class="status-info-item">
+            <div class="status-info-label">Gerbong / Kursi</div>
+            <div class="status-info-value">Gerbong 2 — 5C</div>
+          </div>
+          <div class="status-info-item">
+            <div class="status-info-label">Kelas</div>
+            <div class="status-info-value">Ekonomi</div>
+          </div>
+          <div class="status-info-item">
+            <div class="status-info-label">Penumpang</div>
+            <div class="status-info-value">Budi Santoso</div>
+          </div>
+          <div class="status-info-item">
+            <div class="status-info-label">Berangkat</div>
+            <div class="status-info-value">09.30 WIB</div>
+          </div>
+          <div class="status-info-item">
+            <div class="status-info-label">Tiba</div>
+            <div class="status-info-value">10.35 WIB</div>
+          </div>
+          <div class="status-info-item">
+            <div class="status-info-label">Total Bayar</div>
+            <div class="status-info-value text-gold font-bold">Rp 15.500</div>
+          </div>
+        </div>
+        <div class="alert alert-info" style="margin-top:1rem;">
+          ⏰ Batas waktu pembayaran: <strong>12 Des 2025 pukul 23.59 WIB</strong>. Lewati batas waktu, pesanan otomatis dibatalkan.
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== TRANSAKSI 3: DIBATALKAN ===== -->
+    <div class="status-card" style="opacity:0.75;">
+      <div class="status-card-header">
+        <div>
+          <div style="font-size:0.75rem;color:var(--text-lite);margin-bottom:0.2rem;text-transform:uppercase;letter-spacing:0.08em;">Kode Booking</div>
+          <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--navy);">KAI-2025-000987</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:0.75rem;">
+          <span class="status-badge cancelled">✕ Dibatalkan</span>
+          <a href="index.html" class="btn btn-secondary" style="padding:0.4rem 1rem;font-size:0.82rem;">🔄 Pesan Ulang</a>
+        </div>
+      </div>
+      <div class="status-card-body">
+        <div class="status-route">
+          <span class="status-city">Jakarta Gambir</span>
+          <span class="status-arrow">→</span>
+          <span class="status-city">Bandung</span>
+        </div>
+        <div class="status-grid">
+          <div class="status-info-item">
+            <div class="status-info-label">Kereta</div>
+            <div class="status-info-value">Argo Parahyangan</div>
+          </div>
+          <div class="status-info-item">
+            <div class="status-info-label">Tanggal</div>
+            <div class="status-info-value">Sab, 1 Nov 2025</div>
+          </div>
+          <div class="status-info-item">
+            <div class="status-info-label">Alasan Batal</div>
+            <div class="status-info-value" style="color:var(--red);">Kadaluarsa</div>
+          </div>
+          <div class="status-info-item">
+            <div class="status-info-label">Total Bayar</div>
+            <div class="status-info-value">Rp 120.000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <p>© 2025 <strong>KAI Tiket</strong> — Platform Pemesanan Tiket Kereta Api Indonesia 🚂</p>
+  </footer>
+
+</body>
+</html>
