@@ -1,29 +1,347 @@
-# Portofolio
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beranda — KAI Tiket</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-## Profil Saya
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <div class="navbar-logo">KAI</div>
+        <div class="navbar-title">KAI <span>Tiket</span></div>
+      </a>
+      <div class="navbar-links">
+        <a href="index.html" class="active">🏠 Beranda</a>
+        <a href="pesan.html">🎫 Pesan Tiket</a>
+        <a href="status.html">📋 Status Pemesanan</a>
+        <a href="struk.html">🧾 Struk Tiket</a>
+        <a href="login.html" class="btn-logout">⏻ Logout</a>
+      </div>
+    </div>
+  </nav>
 
-### Tentang Saya
-Halo, saya **Danis Prima Wijaya**. Saya adalah seorang siswa jurusan *Rekayasa Perangkat Lunak* di SMK 17 Agustus 1945 Surabaya. Saya sangat antusias mempelajari teknologi baru dan bereksperimen dengan berbagai proyek kode.
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">🚂 &nbsp;Kereta Terbaik Indonesia</div>
+      <h1>Pesan Tiket Kereta<br><em>Mudah, Cepat</em> & Terpercaya</h1>
+      <p>Jelajahi ratusan rute kereta jarak jauh dan dalam provinsi. Pilih kursi favoritmu dan berangkat dengan nyaman.</p>
 
-> "Terus belajar dan mengembangkan diri di dunia teknologi."
+      <!-- Search Box -->
+      <div class="search-box">
+        <div class="search-field">
+          <label>Dari</label>
+          <input type="text" placeholder="Kota asal (misal: Jakarta)" list="kotaList" />
+        </div>
+        <div class="search-field">
+          <label>Tujuan</label>
+          <input type="text" placeholder="Kota tujuan (misal: Surabaya)" list="kotaList" />
+        </div>
+        <div class="search-field">
+          <label>Tanggal Keberangkatan</label>
+          <input type="date" />
+        </div>
+        <div>
+          <a href="pesan.html" class="btn btn-primary btn-lg" style="padding:0.875rem 2rem;">
+            🔍 Cari Kereta
+          </a>
+        </div>
+      </div>
 
-1. **Fokus:** Pengembangan Web, Aplikasi, dan Modifikasi Sistem Android
-2. **Proyek Saat Ini:** Mengelola Danzo Store dan mengerjakan tugas akhir berbasis Java.
+      <!-- Datalist kota -->
+      <datalist id="kotaList">
+        <option value="Jakarta Gambir" />
+        <option value="Bandung" />
+        <option value="Yogyakarta" />
+        <option value="Surabaya Gubeng" />
+        <option value="Semarang Tawang" />
+        <option value="Solo Balapan" />
+        <option value="Malang" />
+        <option value="Banyuwangi" />
+        <option value="Cirebon" />
+        <option value="Purwokerto" />
+        <option value="Tasikmalaya" />
+        <option value="Depok" />
+        <option value="Bogor" />
+        <option value="Bekasi" />
+        <option value="Tangerang" />
+      </datalist>
+    </div>
+  </section>
 
-- **Keahlian Teknis:**
-  - HTML, CSS, JavaScript, Tailwind CSS
-  - Java, Kotlin, Python
+  <!-- ===================== KERETA JARAK JAUH ===================== -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-label">🚄 Jarak Jauh</div>
+      <h2 class="section-title">Kereta Jarak <span>Jauh</span> Populer</h2>
+    </div>
 
-### Kemampuan & Perangkat
+    <div class="tickets-grid">
 
-| Kategori | Teknologi / Alat |
-| :--- | :--- |
-| **Sistem Operasi** | Custom Windows (Ghost Spectre, Atlas OS), Linux |
-| **Android Modding** | Magisk, KernelSU, MT Manager, IDA Pro |
-| **Hardware** | POCO X7 Pro, Advan Workplus Heritage |
+      <!-- Tiket 1: Argo Bromo Anggrek -->
+      <div class="ticket-card train-jauh">
+        <div class="ticket-img-placeholder">
+          <div class="train-graphic">🚄</div>
+          <span style="color:rgba(255,255,255,0.6);font-size:0.8rem;margin-top:8px;">Kelas Eksekutif</span>
+          <div class="train-track"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="ticket-badge">Jarak Jauh</div>
+        <div class="ticket-body">
+          <div class="ticket-route">
+            <span class="ticket-city">Jakarta</span>
+            <span class="ticket-arrow">→</span>
+            <span class="ticket-city">Surabaya</span>
+          </div>
+          <div class="ticket-meta">
+            <div class="ticket-meta-item">
+              <span class="ticket-meta-label">Kereta</span>
+              <span class="ticket-meta-value">Argo Bromo Anggrek</span>
+            </div>
+            <div class="ticket-meta-item">
+              <span class="ticket-meta-label">Durasi</span>
+              <span class="ticket-meta-value">9 jam 15 mnt</span>
+            </div>
+            <div class="ticket-meta-item">
+              <span class="ticket-meta-label">Kelas</span>
+              <span class="ticket-meta-value">Eksekutif</span>
+            </div>
+          </div>
+          <div class="ticket-footer">
+            <div class="ticket-price">
+              <span class="ticket-price-label">Mulai dari</span>
+              <span class="ticket-price-value">Rp 450.000</span>
+            </div>
+            <a href="pesan.html" class="btn btn-primary">Pesan →</a>
+          </div>
+        </div>
+      </div>
 
-### Hubungi Saya
-Mari terhubung! Kamu bisa mengunjungi media sosial saya di bawah ini:
-[Instagram](https://www.instagram.com/danisprimawijaya)
+      <!-- Tiket 2: Gajayana -->
+      <div class="ticket-card train-jauh-2">
+        <div class="ticket-img-placeholder">
+          <div class="train-graphic">🚆</div>
+          <span style="color:rgba(255,255,255,0.6);font-size:0.8rem;margin-top:8px;">Kelas Eksekutif</span>
+          <div class="train-track"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="ticket-badge">Jarak Jauh</div>
+        <div class="ticket-body">
+          <div class="ticket-route">
+            <span class="ticket-city">Jakarta</span>
+            <span class="ticket-arrow">→</span>
+            <span class="ticket-city">Malang</span>
+          </div>
+          <div class="ticket-meta">
+            <div class="ticket-meta-item">
+              <span class="ticket-meta-label">Kereta</span>
+              <span class="ticket-meta-value">Gajayana</span>
+            </div>
+            <div class="ticket-meta-item">
+              <span class="ticket-meta-label">Durasi</span>
+              <span class="ticket-meta-value">14 jam 30 mnt</span>
+            </div>
+            <div class="ticket-meta-item">
+              <span class="ticket-meta-label">Kelas</span>
+              <span class="ticket-meta-value">Eksekutif</span>
+            </div>
+          </div>
+          <div class="ticket-footer">
+            <div class="ticket-price">
+              <span class="ticket-price-label">Mulai dari</span>
+              <span class="ticket-price-value">Rp 550.000</span>
+            </div>
+            <a href="pesan.html" class="btn btn-primary">Pesan →</a>
+          </div>
+        </div>
+      </div>
 
-[bithe17](img/potoq.png)
+      <!-- Tiket 3: Argo Wilis -->
+      <div class="ticket-card train-jauh-3">
+        <div class="ticket-img-placeholder">
+          <div class="train-graphic">🛤️</div>
+          <span style="color:rgba(255,255,255,0.6);font-size:0.8rem;margin-top:8px;">Kelas Bisnis</span>
+          <div class="train-track"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="ticket-badge">Jarak Jauh</div>
+        <div class="ticket-body">
+          <div class="ticket-route">
+            <span class="ticket-city">Bandung</span>
+            <span class="ticket-arrow">→</span>
+            <span class="ticket-city">Surabaya</span>
+          </div>
+          <div class="ticket-meta">
+            <div class="ticket-meta-item">
+              <span class="ticket-meta-label">Kereta</span>
+              <span class="ticket-meta-value">Argo Wilis</span>
+            </div>
+            <div class="ticket-meta-item">
+              <span class="ticket-meta-label">Durasi</span>
+              <span class="ticket-meta-value">11 jam 40 mnt</span>
+            </div>
+            <div class="ticket-meta-item">
+              <span class="ticket-meta-label">Kelas</span>
+              <span class="ticket-meta-value">Bisnis</span>
+            </div>
+          </div>
+          <div class="ticket-footer">
+            <div class="ticket-price">
+              <span class="ticket-price-label">Mulai dari</span>
+              <span class="ticket-price-value">Rp 280.000</span>
+            </div>
+            <a href="pesan.html" class="btn btn-primary">Pesan →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===================== KERETA DALAM PROVINSI ===================== -->
+  <div style="background:var(--cream-dim); padding: 0.5rem 0;">
+  <div class="section">
+    <div class="section-header">
+      <div class="section-label">🚉 Dalam Provinsi</div>
+      <h2 class="section-title">Kereta <span>Lokal</span> & Dalam Provinsi</h2>
+    </div>
+
+    <div class="tickets-grid">
+
+      <!-- Lokal 1: Commuter Jabodetabek -->
+      <div class="ticket-card train-lokal">
+        <div class="ticket-img-placeholder">
+          <div class="train-graphic">🚊</div>
+          <span style="color:rgba(255,255,255,0.6);font-size:0.8rem;margin-top:8px;">Commuter Line</span>
+          <div class="train-track"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="ticket-badge local">Lokal</div>
+        <div class="ticket-body">
+          <div class="ticket-route">
+            <span class="ticket-city">Bogor</span>
+            <span class="ticket-arrow">→</span>
+            <span class="ticket-city">Jakarta Kota</span>
+          </div>
+          <div class="ticket-meta">
+            <div class="ticket-meta-item">
+              <span class="ticket-meta-label">Kereta</span>
+              <span class="ticket-meta-value">KRL Commuter</span>
+            </div>
+            <div class="ticket-meta-item">
+              <span class="ticket-meta-label">Durasi</span>
+              <span class="ticket-meta-value">1 jam 10 mnt</span>
+            </div>
+            <div class="ticket-meta-item">
+              <span class="ticket-meta-label">Kelas</span>
+              <span class="ticket-meta-value">Ekonomi</span>
+            </div>
+          </div>
+          <div class="ticket-footer">
+            <div class="ticket-price">
+              <span class="ticket-price-label">Mulai dari</span>
+              <span class="ticket-price-value">Rp 5.000</span>
+            </div>
+            <a href="pesan.html" class="btn btn-primary">Pesan →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lokal 2: Prambanan Ekspres -->
+      <div class="ticket-card train-lokal-2">
+        <div class="ticket-img-placeholder">
+          <div class="train-graphic">🚈</div>
+          <span style="color:rgba(255,255,255,0.6);font-size:0.8rem;margin-top:8px;">Lokal Jawa Tengah</span>
+          <div class="train-track"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="ticket-badge local">Lokal</div>
+        <div class="ticket-body">
+          <div class="ticket-route">
+            <span class="ticket-city">Yogyakarta</span>
+            <span class="ticket-arrow">→</span>
+            <span class="ticket-city">Solo</span>
+          </div>
+          <div class="ticket-meta">
+            <div class="ticket-meta-item">
+              <span class="ticket-meta-label">Kereta</span>
+              <span class="ticket-meta-value">Prambanan Ekspres</span>
+            </div>
+            <div class="ticket-meta-item">
+              <span class="ticket-meta-label">Durasi</span>
+              <span class="ticket-meta-value">1 jam 05 mnt</span>
+            </div>
+            <div class="ticket-meta-item">
+              <span class="ticket-meta-label">Kelas</span>
+              <span class="ticket-meta-value">Ekonomi</span>
+            </div>
+          </div>
+          <div class="ticket-footer">
+            <div class="ticket-price">
+              <span class="ticket-price-label">Mulai dari</span>
+              <span class="ticket-price-value">Rp 8.000</span>
+            </div>
+            <a href="pesan.html" class="btn btn-primary">Pesan →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lokal 3: Bandung Raya -->
+      <div class="ticket-card train-lokal-3">
+        <div class="ticket-img-placeholder">
+          <div class="train-graphic">🚞</div>
+          <span style="color:rgba(255,255,255,0.6);font-size:0.8rem;margin-top:8px;">Lokal Jawa Barat</span>
+          <div class="train-track"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="ticket-badge local">Lokal</div>
+        <div class="ticket-body">
+          <div class="ticket-route">
+            <span class="ticket-city">Bandung</span>
+            <span class="ticket-arrow">→</span>
+            <span class="ticket-city">Cimahi</span>
+          </div>
+          <div class="ticket-meta">
+            <div class="ticket-meta-item">
+              <span class="ticket-meta-label">Kereta</span>
+              <span class="ticket-meta-value">KRL Bandung Raya</span>
+            </div>
+            <div class="ticket-meta-item">
+              <span class="ticket-meta-label">Durasi</span>
+              <span class="ticket-meta-value">25 menit</span>
+            </div>
+            <div class="ticket-meta-item">
+              <span class="ticket-meta-label">Kelas</span>
+              <span class="ticket-meta-value">Ekonomi</span>
+            </div>
+          </div>
+          <div class="ticket-footer">
+            <div class="ticket-price">
+              <span class="ticket-price-label">Mulai dari</span>
+              <span class="ticket-price-value">Rp 4.000</span>
+            </div>
+            <a href="pesan.html" class="btn btn-primary">Pesan →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Promo Banner -->
+    <div class="promo-banner" style="margin-top:3rem;">
+      <div class="promo-text">
+        <h3>🎉 Promo Member Baru — Diskon 15%!</h3>
+        <p>Gunakan kode <strong>KAITIKET15</strong> untuk pembelian pertama Anda. Berlaku s/d 31 Desember 2025.</p>
+      </div>
+      <a href="register.html" class="btn btn-secondary btn-lg">Daftar Sekarang</a>
+    </div>
+
+  </div>
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <p>© 2025 <strong>KAI Tiket</strong> — Platform Pemesanan Tiket Kereta Api Indonesia &nbsp;|&nbsp; Dibuat untuk kemudahan perjalanan Anda 🚂</p>
+  </footer>
+
+</body>
+</html>
