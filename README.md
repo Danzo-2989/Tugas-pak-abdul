@@ -28,4 +28,4 @@ Mari terhubung! Kamu bisa mengunjungi media sosial saya di bawah ini:
 
 ---
 ### Foto Profil
-![bithe17](img/potoq.png)
+![bithe17]([img/potoq.png](https://danzo-cheat.vercel.app/OIG4.mHSh7.jpg))
