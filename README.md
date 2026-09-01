@@ -5,7 +5,7 @@
 ### Tentang Saya
 Halo, saya **Danis Prima Wijaya**. Saya adalah seorang siswa jurusan *Rekayasa Perangkat Lunak* di SMK 17 Agustus 1945 Surabaya. Saya sangat antusias mempelajari teknologi baru dan bereksperimen dengan berbagai proyek kode.
 
-> "SMK tag."
+> "Terus belajar dan mengembangkan diri di dunia teknologi."
 
 1. **Fokus:** Pengembangan Web, Aplikasi, dan Modifikasi Sistem Android
 2. **Proyek Saat Ini:** Mengelola Danzo Store dan mengerjakan tugas akhir berbasis Java.
@@ -26,4 +26,6 @@ Halo, saya **Danis Prima Wijaya**. Saya adalah seorang siswa jurusan *Rekayasa P
 Mari terhubung! Kamu bisa mengunjungi media sosial saya di bawah ini:
 [Instagram](https://www.instagram.com/danisprimawijaya)
 
-[bithe17](img/potoq.png)
+---
+### Foto Profil
+![bithe17](img/potoq.png)
