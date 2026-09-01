@@ -23,9 +23,9 @@ Halo, saya **Danis Prima Wijaya**. Saya adalah seorang siswa jurusan *Rekayasa P
 | **Hardware** | POCO X7 Pro, Advan Workplus Heritage |
 
 ### Hubungi Saya
-Mari terhubung! Kamu bisa mengunjungi media sosial saya di bawah ini:
-[Instagram](https://www.instagram.com/danisprimawijaya)
+Mari terhubung! Kamu bisa mengunjungi Instagram saya di bawah ini:
+[Instagram @danzou_still_learning](https://www.instagram.com/danzou_still_learning)
 
 ---
 ### Foto Profil
-![bithe17]([img/potoq.png](https://danzo-cheat.vercel.app/OIG4.mHSh7.jpg))
+![Foto Profil Danzo](https://danzo-cheat.vercel.app/OIG4.mHSh7.jpg)
