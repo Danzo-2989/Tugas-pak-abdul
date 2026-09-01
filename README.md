@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Web Development Banner" style="border-radius: 10px;">
   
-  # 🚀 Tugas Pak Abdul
+  ## 🚀 Tugas Pak Abdul
   
   **Proyek Pengembangan Web Statis (HTML & CSS)**
   
